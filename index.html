@@ -1,752 +1,1564 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>M. Usman Khan - Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link rel="icon" href="assets/img/icon/favicon.ico" type="image/x-icon">
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Muhammad Usman Khan - Computer Vision Engineer | MS Artificial Intelligence | Gold Medalist"/>
+  <meta name="keywords" content="Computer Vision, AI, Deep Learning, Machine Learning, NLP, Portfolio"/>
+  <meta name="author" content="Muhammad Usman Khan"/>
+  <meta name="theme-color" content="#6366f1"/>
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Muhammad Usman Khan | AI & Computer Vision Engineer"/>
+  <meta property="og:description" content="Gold Medalist | MS Artificial Intelligence | Building intelligent systems with Computer Vision & Deep Learning"/>
+  <meta property="og:type" content="website"/>
+  
+  <title>Muhammad Usman Khan | AI & Computer Vision Engineer</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <style>
+    /* ===== CSS VARIABLES & THEME ===== */
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --secondary: #8b5cf6;
+      --accent: #06b6d4;
+      --success: #10b981;
+      --warning: #f59e0b;
+      
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-tertiary: #334155;
+      --bg-card: #1e293b;
+      --bg-card-hover: #334155;
+      
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --text-inverse: #0f172a;
+      
+      --border: #334155;
+      --border-hover: #475569;
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --shadow-glow: 0 0 20px rgb(99 102 241 / 0.3);
+      
+      --radius: 12px;
+      --radius-lg: 20px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-tertiary: #e2e8f0;
+      --bg-card: #ffffff;
+      --bg-card-hover: #f1f5f9;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --text-inverse: #f8fafc;
+      
+      --border: #e2e8f0;
+      --border-hover: #cbd5e1;
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+      --shadow-glow: 0 0 20px rgb(99 102 241 / 0.15);
+    }
+    
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: var(--transition);
+    }
+    img, svg, video { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; transition: var(--transition); }
+    ul { list-style: none; }
+    button { font: inherit; cursor: pointer; border: none; background: none; }
+    
+    /* ===== UTILITIES ===== */
+    .container {
+      width: min(90%, 1200px);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .section {
+      padding: 6rem 0;
+      scroll-margin-top: 80px;
+    }
+    .section-title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+    }
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+      max-width: 600px;
+    }
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .flex { display: flex; gap: 1rem; align-items: center; }
+    .flex-center { display: flex; align-items: center; justify-content: center; }
+    .flex-between { display: flex; align-items: center; justify-content: space-between; }
+    .text-center { text-align: center; }
+    .text-gradient {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: var(--transition);
+    }
+    .badge:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.75rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      font-weight: 600;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-glow);
+      transition: var(--transition);
+      border: 2px solid transparent;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 30px rgb(99 102 241 / 0.5);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-sm { padding: 0.5rem 1rem; font-size: 0.9rem; }
+    
+    /* ===== HEADER & NAV ===== */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+    [data-theme="light"] header {
+      background: rgba(248, 250, 252, 0.85);
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      color: white;
+      font-size: 1.1rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .nav-links a {
+      padding: 0.6rem 1rem;
+      border-radius: var(--radius);
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: var(--transition);
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+      background: var(--bg-tertiary);
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .theme-toggle {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--bg-tertiary);
+      color: var(--text-secondary);
+      transition: var(--transition);
+      border: 1px solid var(--border);
+    }
+    .theme-toggle:hover {
+      background: var(--primary);
+      color: white;
+      transform: rotate(15deg);
+    }
+    .mobile-toggle {
+      display: none;
+      width: 44px; height: 44px;
+      border-radius: var(--radius);
+      background: var(--bg-tertiary);
+      color: var(--text-primary);
+      font-size: 1.3rem;
+    }
+    
+    /* ===== HERO SECTION ===== */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding-top: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse at 20% 80%, rgb(99 102 241 / 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgb(6 182 212 / 0.15) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .hero-content {
+      text-align: center;
+      max-width: 800px;
+      position: relative;
+      z-index: 1;
+      animation: fadeInUp 0.8s ease-out;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero-avatar {
+      width: 140px; height: 140px;
+      border-radius: 50%;
+      margin: 0 auto 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: grid;
+      place-items: center;
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: white;
+      box-shadow: var(--shadow-glow);
+      border: 4px solid var(--bg-primary);
+    }
+    .hero-name {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      line-height: 1.1;
+    }
+    .hero-title {
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .hero-social {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+    .social-btn {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      transition: var(--transition);
+    }
+    .social-btn:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      transform: translateY(-3px);
+    }
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s infinite;
+      color: var(--text-muted);
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+      40% { transform: translateX(-50%) translateY(-10px); }
+      60% { transform: translateX(-50%) translateY(-5px); }
+    }
+    
+    /* ===== ABOUT SECTION ===== */
+    .about-content {
+      display: grid;
+      gap: 2rem;
+      align-items: start;
+    }
+    .about-text p {
+      margin-bottom: 1rem;
+      color: var(--text-secondary);
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .stat-card {
+      padding: 1.25rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-align: center;
+      transition: var(--transition);
+    }
+    .stat-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+    .stat-value {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    
+    /* ===== TIMELINE (Education/Experience) ===== */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+    .timeline-item {
+      position: relative;
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+      margin-bottom: 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: var(--transition);
+    }
+    .timeline-item:hover {
+      border-color: var(--primary);
+      transform: translateX(5px);
+      box-shadow: var(--shadow-lg);
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.45rem;
+      top: 1.8rem;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid var(--bg-primary);
+      box-shadow: 0 0 0 3px var(--primary);
+    }
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .timeline-title {
+      font-weight: 700;
+      font-size: 1.15rem;
+    }
+    .timeline-subtitle {
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .timeline-date {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      background: var(--bg-tertiary);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .timeline-desc {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .timeline-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    
+    /* ===== PROJECTS SECTION ===== */
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .project-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    .project-image {
+      height: 180px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .project-content {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .project-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 0.25rem;
+    }
+    .project-desc {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      flex: 1;
+    }
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .project-tech span {
+      font-size: 0.8rem;
+      padding: 0.25rem 0.6rem;
+      background: var(--bg-tertiary);
+      border-radius: 999px;
+      color: var(--text-muted);
+    }
+    .project-links {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: auto;
+    }
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.9rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .project-link:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    
+    /* ===== SKILLS SECTION ===== */
+    .skills-grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .skill-category {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+    }
+    .skill-category-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .skill-tag {
+      padding: 0.5rem 1rem;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition);
+      cursor: default;
+    }
+    .skill-tag:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: white;
+      transform: scale(1.05);
+    }
+    
+    /* ===== PUBLICATIONS ===== */
+    .pub-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      transition: var(--transition);
+    }
+    .pub-card:hover {
+      border-color: var(--primary);
+      transform: translateX(5px);
+    }
+    .pub-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .pub-authors {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .pub-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .pub-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .pub-link {
+      color: var(--primary);
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .pub-link:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    
+    /* ===== CONTACT SECTION ===== */
+    .contact-grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .contact-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+    .contact-icon {
+      width: 60px; height: 60px;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 1.5rem;
+    }
+    .contact-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact-value {
+      color: var(--text-secondary);
+      word-break: break-all;
+    }
+    .contact-value a {
+      color: var(--primary);
+      transition: var(--transition);
+    }
+    .contact-value a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    
+    /* ===== FOOTER ===== */
+    footer {
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+    
+    /* ===== ANIMATIONS ON SCROLL ===== */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        top: 70px; left: 0; right: 0;
+        background: var(--bg-primary);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0;
+        transform: translateY(-150%);
+        transition: var(--transition);
+        z-index: 999;
+      }
+      .nav-links.active {
+        transform: translateY(0);
+      }
+      .nav-links a {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border-radius: 0;
+      }
+      .mobile-toggle {
+        display: grid;
+      }
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-stats {
+        grid-template-columns: 1fr;
+      }
+      .timeline {
+        padding-left: 1.5rem;
+      }
+      .timeline-item {
+        padding: 1.25rem;
+      }
+      .timeline-item::before {
+        left: -2.2rem;
+      }
+    }
+    
+    /* ===== PRINT STYLES ===== */
+    @media print {
+      header, footer, .scroll-indicator, .theme-toggle, .mobile-toggle {
+        display: none !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+      }
+      .section {
+        padding: 2rem 0 !important;
+        page-break-inside: avoid;
+      }
+      .project-card, .pub-card, .timeline-item {
+        break-inside: avoid;
+        border: 1px solid #ccc !important;
+      }
+    }
+  </style>
 </head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex flex-column justify-content-center">
-
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a id="homeBtn" href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a id="aboutBtn" href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a id="resumeBtn" href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a id="portfolioBtn" href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a id="servicesBtn" href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-        <li><a id="contactBtn" href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
-    </nav>
-
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">UK</div>
+        <span>Muhammad Usman Khan</span>
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="active">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="">
-
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2 style="margin-top: 20%;">Muhammad Usman Khan</h2>
-            <p>I'm <span class="typed" data-typed-items="Passionate Programmer, Developer, Freelancer, AI and Machine Learning Engineer, NLP Engineer, Research Scholar">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="https://www.facebook.com/share/UMZ4uKwMR8cWZYW5/?mibextid=qi2Omg"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.linkedin.com/in/namsukhan47/"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-avatar">UK</div>
+        <h1 class="hero-name">Muhammad Usman Khan</h1>
+        <p class="hero-title">
+          Gold Medalist • MS Artificial Intelligence • Computer Vision Engineer
+        </p>
+        
+        <div class="hero-badges">
+          <span class="badge"><i class="fas fa-medal"></i> Gold Medalist</span>
+          <span class="badge"><i class="fas fa-graduation-cap"></i> MS AI, FAST NUCES</span>
+          <span class="badge"><i class="fas fa-code"></i> PyTorch & TensorFlow</span>
+          <span class="badge"><i class="fas fa-eye"></i> Computer Vision Expert</span>
+        </div>
+        
+        <div class="hero-cta">
+          <a href="#projects" class="btn">
+            <i class="fas fa-rocket"></i> View My Work
+          </a>
+          <a href="mailto:m.usman.academia@gmail.com" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Get In Touch
+          </a>
+        </div>
+        
+        <div class="hero-social">
+          <a href="https://scholar.google.com" target="_blank" class="social-btn" aria-label="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
+          <a href="https://github.com/usman-academia" target="_blank" class="social-btn" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/usman-academia" target="_blank" class="social-btn" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:m.usman.academia@gmail.com" class="social-btn" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
       </div>
+      
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>I’m an AI and software developer with over 6 years in teaching and 3 years in hands-on development. My work covers a wide range of areas, from building web and app projects to advanced AI solutions like deepfake detection and document classification. I’m skilled in programming and web development, including but not limited to C++, Java, Python, Database, HTML, CSS, JavaScript, Bootstrap and marketing. I also enjoy making complex tech topics simple and practical, helping others learn and grow in both AI and web development.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>AI Engineer &amp; Web Developer.</h2>
-            <p class="fst-italic py-3">
-              I work in AI with a focus on machine learning, deep learning, and NLP. My projects include deepfake detection, facial recognition, document classification, and author identification. I build models that handle image and text data, making it easier to solve real-world problems with accuracy. <br><br>
-              I have experience in both front-end and back-end web development, using HTML, CSS, JavaScript, jQuery, and Bootstrap for the front end, and tools like MySQL and Java for the back end. My work focuses on building responsive, user-friendly websites and applications with clean, functional designs.
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate about building intelligent systems that solve real-world problems</p>
+        
+        <div class="about-content grid grid-2">
+          <div class="about-text animate-on-scroll">
+            <p>
+              I'm a <strong>Computer Vision Engineer</strong> and <strong>AI Researcher</strong> with a Master's in Artificial Intelligence from FAST National University, where I graduated as a <span class="text-gradient">Gold Medalist</span>. My work focuses on deep learning, document classification, medical imaging, and deploying production-ready AI solutions.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>16 March 1998</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>usman-pro.github.io</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>m.usman.academia@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Islamabad, Pakistan</span></li>
-                </ul>
+            <p>
+              I've led OCR teams, architected CV pipelines for international clients, and published research in Springer journals. I'm passionate about <strong>MLOps</strong>, <strong>Generative AI</strong>, and making cutting-edge research accessible through clean, efficient code.
+            </p>
+            <p>
+              When I'm not training models, you'll find me mentoring students, contributing to open-source, or exploring the latest in LLMs and multimodal systems.
+            </p>
+            
+            <div class="about-stats">
+              <div class="stat-card">
+                <div class="stat-value">3.76</div>
+                <div class="stat-label">BS CGPA (Gold)</div>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26+</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Masters (18 Years)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
+              <div class="stat-card">
+                <div class="stat-value">99%+</div>
+                <div class="stat-label">OCR Accuracy</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">2+</div>
+                <div class="stat-label">Publications</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">15+</div>
+                <div class="stat-label">Projects Delivered</div>
               </div>
             </div>
-            <p class="py-3">
-              This is just a quick intro—feel free to explore my portfolio to see more of my work. If you’re interested in collaborating or have any questions, please don’t hesitate to reach out!
+          </div>
+          
+          <div class="animate-on-scroll">
+            <div class="skill-category">
+              <h3 class="skill-category-title"><i class="fas fa-bullseye"></i> Research Interests</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Large Language Models</span>
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">Generative AI</span>
+                <span class="skill-tag">MLOps</span>
+                <span class="skill-tag">Medical Imaging</span>
+                <span class="skill-tag">Remote Sensing</span>
+              </div>
+            </div>
+            
+            <div style="margin-top: 1.5rem;" class="skill-category">
+              <h3 class="skill-category-title"><i class="fas fa-certificate"></i> Certifications</h3>
+              <div class="skill-tags">
+                <span class="skill-tag"><i class="fas fa-shield-alt"></i> Intro to Cybersecurity</span>
+                <span class="skill-tag"><i class="fas fa-user-secret"></i> Junior Cybersecurity Analyst</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic foundation in Artificial Intelligence and Information Technology</p>
+        
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-subtitle">MS in Artificial Intelligence</div>
+                <div class="timeline-title">FAST National University, Islamabad</div>
+              </div>
+              <span class="timeline-date">2023 • GPA: 3.50/4.00</span>
+            </div>
+            <p class="timeline-desc">
+              Thesis: <em>Deep Learning Based Document Classification Using Cosine Similarity Based Methods</em>. 
+              Research on hybrid neural architectures combining semantic similarity for document classification.
+            </p>
+          </div>
+          
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-subtitle">BS in Information Technology</div>
+                <div class="timeline-title">University of Malakand</div>
+              </div>
+              <span class="timeline-date">2020 • GPA: 3.76/4.00 🏆</span>
+            </div>
+            <p class="timeline-desc">
+              <strong>Gold Medalist / Distinction</strong> - Highest CGPA in cohort. 
+              Foundation in programming, databases, software engineering, and machine learning fundamentals.
+            </p>
+          </div>
+          
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-subtitle">Higher Secondary (Grade 12)</div>
+                <div class="timeline-title">BISE Malakand</div>
+              </div>
+              <span class="timeline-date">2015 • 72%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">Professional journey in AI, education, and industry</p>
+        
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-subtitle">Lecturer (BPS-18)</div>
+                <div class="timeline-title">Institute of Space Technology, Islamabad</div>
+              </div>
+              <span class="timeline-date">May 2026 – Present</span>
+            </div>
+            <p class="timeline-desc">
+              Teaching advanced courses in AI, Computer Vision, and Deep Learning to undergraduate and graduate students.
+            </p>
+            <div class="timeline-tags">
+              <span class="badge">AI Curriculum</span>
+              <span class="badge">Student Mentorship</span>
+              <span class="badge">Research Guidance</span>
+            </div>
+          </div>
+          
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-subtitle">OCR Team Lead • Internship</div>
+                <div class="timeline-title">Funavry Technologies, Islamabad</div>
+              </div>
+              <span class="timeline-date">Jan 2026 – Mar 2026</span>
+            </div>
+            <p class="timeline-desc">
+              Led OCR team developing CV pipelines for U.S. clients. Overhauled legacy document classification pipeline achieving <strong>99%+ accuracy</strong> (up from &lt;85%). Hands-on architecture design and deployment.
+            </p>
+            <div class="timeline-tags">
+              <span class="badge">OCR</span>
+              <span class="badge">PyTorch</span>
+              <span class="badge">MLOps</span>
+              <span class="badge">Team Leadership</span>
+            </div>
+          </div>
+          
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-subtitle">Lecturer (BPS-17)</div>
+                <div class="timeline-title">Higher Education Department, KP</div>
+              </div>
+              <span class="timeline-date">Aug 2023 – Apr 2026</span>
+            </div>
+            <p class="timeline-desc">
+              Taught Programming, AI, ANN, NLP, Assembly, Databases, and Web Development. Developed modern curriculum integrating hands-on projects and industry-relevant skills.
+            </p>
+            <div class="timeline-tags">
+              <span class="badge">Curriculum Design</span>
+              <span class="badge">Python</span>
+              <span class="badge">NLP</span>
+              <span class="badge">Web Dev</span>
+            </div>
+          </div>
+          
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-subtitle">Instructor</div>
+                <div class="timeline-title">FAST National University, Islamabad</div>
+              </div>
+              <span class="timeline-date">Aug 2021 – Jul 2023</span>
+            </div>
+            <p class="timeline-desc">
+              Instructed Programming Fundamentals, OOP, and Artificial Intelligence. Mentored students in capstone projects and research initiatives.
             </p>
           </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-emoji-smile"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-headset"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-people"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hard Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Here’s a quick look at the tools, technologies, and languages I specialize in across development and AI.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Programming - C++, Java, Python and JavaScript</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Artificial Intelligence</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>MERN Stack</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Databases - SQL and NoSQL</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Machine and Deep Learning</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Natural Language Processing</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Explore my detailed resume to see my full career journey, key achievements, and the projects I’ve worked on. Let’s connect if you’d like to learn more or discuss potential opportunities.</p>
-      </div><!-- End Section Title -->
-
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section" style="background: var(--bg-secondary);">
       <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Muhammad Usman Khan</h4>
-              <p><em>Dedicated and results-driven professional with a strong background in AI, programming, and 
-                education. Seeking to leverage my experience in teaching and research to contribute to a 
-                dynamic team, advance in the field of artificial intelligence, and make a meaningful impact 
-                through innovative solutions.</em></p>
-              <ul>
-                <li>Lecturer, Higher Education Department</li>
-                <li>Islamabad, Pakistan</li>
-                <li>m.usman.academia@gmail.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Artificial Intelligence <u>(2 Years)</u></h4>
-              <h5>2021 - 2023</h5>
-              <p><em>School of Computing, National University of Computer and Emerging Sciences, Islamabad</em></p>
-              <p>During these two years, I focused on advanced machine learning, image processing, deep learning, and natural language processing. I earned a CGPA of 3.50 out of 4 and conducted research in the hybrid field of deep learning applied to both text and images.</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Information Technology <u>(4 Years)</u></h4>
-              <h5>2016 - 2020</h5>
-              <p><em>Department of CS&IT, University of Malakand, Chakdara</em></p>
-              <p>I have a deep passion for programming, data structures, and databases. Over the course of my 4-year bachelor's, I worked with technologies like Java, C++, JavaScript, jQuery, PHP, SQL, and Android. I was also honored with a Gold Medal/Distinction for maintaining the highest CGPA in my entire batch.</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Lecturer</h4>
-              <h5>2023 - Present</h5>
-              <p><em>Department of Computer Science, Government of Pakistan</em></p>
-              <ul>
-                <li>Taught courses on Programming Fundamentals, Object-Oriented Programming, Artificial Intelligence, Web Development, Analysis of Algorithms, and Deep Learning.</li>
-                <li>Created course materials, assignments, and exams to help students learn effectively.</li>
-                <li>Mentored students on projects and supported their growth in AI and web development.</li>
-                <li>Participated in meetings and workshops to stay up-to-date with the latest trends in computer science.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Instructor</h4>
-              <h5>2021 - 2023</h5>
-              <p><em>School of Computing, National University of Computer and Emerging Sciences, Islamabad</em></p>
-              <ul>
-                <li>Created lab manuals for engaging 3-hour sessions, where students worked on tasks related to programming, databases, and other subjects.</li>
-                <li>Monitored students during labs, providing help and guidance as needed to ensure they were on track.</li>
-                <li>Prepared and conducted online lab exams, then evaluated student performance.</li>
-                <li>Assisted the department in various evaluation tasks, like creating quizzes, assignments, and presentation content, and grading them.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Production-ready AI solutions and research implementations</p>
+        
+        <div class="grid grid-3">
+          <!-- Project 1 -->
+          <article class="project-card animate-on-scroll">
+            <div class="project-image">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">PDF Document Classification Pipeline</h3>
+              <p class="project-desc">
+                Led OCR team to overhaul failing legacy pipeline for international client. Achieved <strong>99%+ accuracy & F1-score</strong> (up from &lt;85%) through architecture redesign and semantic distance optimization.
+              </p>
+              <div class="project-tech">
+                <span>PyTorch</span>
+                <span>OCR</span>
+                <span>Cosine Similarity</span>
+                <span>FastAPI</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project 2 -->
+          <article class="project-card animate-on-scroll">
+            <div class="project-image">
+              <i class="fas fa-satellite"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Golf Course Satellite Segmentation</h3>
+              <p class="project-desc">
+                Multi-class semantic segmentation on high-res satellite imagery (tees, bunkers, fairways, greens). Stylized mask rendering for cartographic mapping applications.
+              </p>
+              <div class="project-tech">
+                <span>U-Net</span>
+                <span>Remote Sensing</span>
+                <span>OpenCV</span>
+                <span>GeoPandas</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project 3 -->
+          <article class="project-card animate-on-scroll">
+            <div class="project-image">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">ECG Digitization System</h3>
+              <p class="project-desc">
+                Transformed noisy analogue ECG scans into reconstructed digital signals via advanced image processing and signal reconstruction pipelines for medical analysis.
+              </p>
+              <div class="project-tech">
+                <span>Signal Processing</span>
+                <span>OpenCV</span>
+                <span>NumPy</span>
+                <span>SciPy</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Details</a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project 4 -->
+          <article class="project-card animate-on-scroll">
+            <div class="project-image">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">On-Device Quantized LLM App</h3>
+              <p class="project-desc">
+                FastAPI backend + client app for offline CPU-based LLM inference with model selection. Optional cloud deployment. Optimized for edge devices with quantization.
+              </p>
+              <div class="project-tech">
+                <span>LLM</span>
+                <span>Quantization</span>
+                <span>FastAPI</span>
+                <span>ONNX</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="project-link"><i class="fas fa-download"></i> Download</a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project 5 -->
+          <article class="project-card animate-on-scroll">
+            <div class="project-image">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">RAG System for Domain QA</h3>
+              <p class="project-desc">
+                End-to-end retrieval-augmented generation pipeline for domain-specific question answering. Combines vector search with LLMs for accurate, contextual responses.
+              </p>
+              <div class="project-tech">
+                <span>RAG</span>
+                <span>LangChain</span>
+                <span>FAISS</span>
+                <span>Transformers</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Project 6 -->
+          <article class="project-card animate-on-scroll">
+            <div class="project-image">
+              <i class="fas fa-mask"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Deepfake & Facial Recognition Suite</h3>
+              <p class="project-desc">
+                FaceNet-based recognition app + DCGAN/WGAN-GP deepfake generator. PyTorch, Streamlit deployment. Includes MTCNN face detection and InceptionNetV3 backbone.
+              </p>
+              <div class="project-tech">
+                <span>FaceNet</span>
+                <span>GANs</span>
+                <span>PyTorch</span>
+                <span>Streamlit</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
         </div>
-
+        
+        <div class="text-center" style="margin-top: 2rem;">
+          <a href="https://github.com/usman-academia" target="_blank" class="btn btn-outline">
+            <i class="fab fa-github"></i> View All Projects on GitHub
+          </a>
+        </div>
       </div>
+    </section>
 
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Explore my portfolio to see a collection of projects I've worked on in AI, web development, and more. Each project showcases my skills in creating practical, real-world solutions. Feel free to dive in and check out the details!</p>
-      </div><!-- End Section Title -->
-
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="section">
       <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Web Applications</li>
-            <li data-filter=".filter-product">AI/ML/Deep Learning/NLP Projects</li>
-            <!-- <li data-filter=".filter-branding">Mobile Applications</li> -->
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Tools, frameworks, and technologies I work with daily</p>
+        
+        <div class="skills-grid grid-2">
+          <div class="skill-category animate-on-scroll">
+            <h3 class="skill-category-title"><i class="fas fa-code"></i> Programming</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Assembly</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          
+          <div class="skill-category animate-on-scroll">
+            <h3 class="skill-category-title"><i class="fas fa-eye"></i> Computer Vision</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Classification</span>
+              <span class="skill-tag">Detection</span>
+              <span class="skill-tag">Segmentation</span>
+              <span class="skill-tag">Pose Estimation</span>
+              <span class="skill-tag">Medical Imaging</span>
+              <span class="skill-tag">Remote Sensing</span>
+              <span class="skill-tag">OCR</span>
+            </div>
+          </div>
+          
+          <div class="skill-category animate-on-scroll">
+            <h3 class="skill-category-title"><i class="fas fa-language"></i> NLP</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Language Modeling</span>
+              <span class="skill-tag">NER</span>
+              <span class="skill-tag">Sentiment Analysis</span>
+              <span class="skill-tag">Translation</span>
+              <span class="skill-tag">Summarization</span>
+              <span class="skill-tag">RAG Systems</span>
+            </div>
+          </div>
+          
+          <div class="skill-category animate-on-scroll">
+            <h3 class="skill-category-title"><i class="fas fa-cogs"></i> Frameworks & Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">HuggingFace</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">Ultralytics YOLO</span>
+              <span class="skill-tag">Scikit-Learn</span>
+            </div>
+          </div>
+          
+          <div class="skill-category animate-on-scroll">
+            <h3 class="skill-category-title"><i class="fas fa-server"></i> Deployment & MLOps</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Model Quantization</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+          </div>
+          
+          <div class="skill-category animate-on-scroll">
+            <h3 class="skill-category-title"><i class="fas fa-database"></i> Web & Data</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">HTML/CSS/JS</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">SQLite</span>
+              <span class="skill-tag">Pandas/NumPy</span>
+            </div>
+          </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
+    <!-- ===== PUBLICATIONS SECTION ===== -->
+    <section id="publications" class="section" style="background: var(--bg-secondary);">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>AI and Machine Learning Solutions</h3>
-              </a>
-              <p>From developing deep learning models to implementing NLP techniques, I can help build cutting-edge AI systems tailored to your needs.</p>
+        <h2 class="section-title">Publications</h2>
+        <p class="section-subtitle">Peer-reviewed research contributing to AI and document intelligence</p>
+        
+        <div class="grid grid-2">
+          <div class="pub-card animate-on-scroll">
+            <h3 class="pub-title">HEADoC: Highly Efficient and Accurate Document Classifier Optimized Using Semantic Distances</h3>
+            <p class="pub-authors">
+              <strong>Muhammad Usman Khan</strong>, Muhammad Adnan Tariq, Muhammad Shaoor Siddique
+            </p>
+            <div class="pub-meta">
+              <span><i class="fas fa-book"></i> Progress in Artificial Intelligence — Springer</span>
+              <span><i class="fas fa-chart-line"></i> IF: 3.4 (5-Year)</span>
+              <span><i class="fas fa-calendar"></i> Oct 2025</span>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Web Development (Front-end & Back-end)</h3>
-              </a>
-              <p>Whether it’s designing responsive websites, building web applications, or developing full-stack solutions, I ensure smooth, interactive, and user-friendly experiences.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Custom Software Development</h3>
-              </a>
-              <p>I specialize in creating software solutions for different industries, focusing on performance, security, and usability.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Technical Consulting & Training</h3>
-              </a>
-              <p>Offering expert advice, mentoring, and hands-on training in AI, programming, web development, and algorithms to help you or your team grow.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bi bi-calendar4-week icon"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Research & Development</h3>
-              </a>
-              <p>I support research in emerging technologies, conducting experiments, building prototypes, and helping businesses explore new possibilities.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Project Management & Support</h3>
-              </a>
-              <p>Providing end-to-end project management services, from planning to execution, ensuring that your tech projects meet deadlines and goals.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Don’t just take my word for it—hear what others have to say about working with me. Below are testimonials from clients, colleagues, and students who have experienced the value I bring to projects and collaborations.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>I have been working with Mr. Khan for quite a long time and I am really excited and happy that I had him worked on my projects.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Mr. Shah</h3>
-                      <h4>Co-Founder &amp; Managing Director</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Highly professional and hell of a motivated person. Highly recommended.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Mr. Abdal Ahsan</h3>
-                      <h4>Entrepreneur</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
+            <a href="https://doi.org/10.1007/s13748-025-00411-x" target="_blank" class="pub-link">
+              <i class="fas fa-external-link-alt"></i> View Publication (DOI)
+            </a>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>I’d love to hear from you! Whether you’re interested in collaborating on a project, have a question, or just want to connect, feel free to reach out. You can contact me through the form below or by email, and I’ll get back to you as soon as possible.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Department of Computer Science, Government Degree College, Thana Malakand</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>m.usman.academia@gmail.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
+          
+          <div class="pub-card animate-on-scroll">
+            <h3 class="pub-title">A Hybrid Statistical Machine Learning Model for Early Prediction of Alzheimer's Disease Using Clinical Biomarkers</h3>
+            <p class="pub-authors">
+              Dr. Arzoo Kanwal, Rabeea Samad, <strong>Muhammad Usman Khan</strong>, Shakir Ullah, Aamir Hayyat
+            </p>
+            <div class="pub-meta">
+              <span><i class="fas fa-book"></i> Spectrum of Engineering Sciences</span>
+              <span><i class="fas fa-chart-line"></i> IF: 4.5</span>
+              <span><i class="fas fa-calendar"></i> Feb 2026</span>
+            </div>
+            <a href="https://doi.org/10.5281/zenodo.18677845" target="_blank" class="pub-link">
+              <i class="fas fa-external-link-alt"></i> View Publication (DOI)
+            </a>
           </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+          
+          <div class="pub-card animate-on-scroll">
+            <h3 class="pub-title">Addressing Semantic Distortions Using Lightweight Embeddings for Quranic Verse Retrieval</h3>
+            <p class="pub-authors">
+              <strong>Muhammad Usman Khan</strong>
+            </p>
+            <div class="pub-meta">
+              <span><i class="fas fa-microphone"></i> Int'l Conf. on NLP</span>
+              <span><i class="fas fa-pen"></i> In Write-Up</span>
+              <span><i class="fas fa-calendar"></i> Oct 2025</span>
+            </div>
+            <a href="#" class="pub-link">
+              <i class="fas fa-file-alt"></i> Preprint Coming Soon
+            </a>
+          </div>
+          
+          <div class="pub-card animate-on-scroll">
+            <h3 class="skill-category-title"><i class="fas fa-graduation-cap"></i> Research Experience</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+              <strong>Researcher</strong> — Dept. of AI & Data Science, FAST NUCES (2022–2024)
+            </p>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+              Conducted research on deep learning–based document classification. Developed hybrid neural architectures combining semantic similarity methods. Authored thesis on cosine similarity-based document classification.
+            </p>
+          </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Contact Section -->
-
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's collaborate on AI projects, research, or innovative ideas</p>
+        
+        <div class="contact-grid grid-3">
+          <div class="contact-card animate-on-scroll">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3 class="contact-title">Email</h3>
+            <p class="contact-value">
+              <a href="mailto:m.usman.academia@gmail.com">m.usman.academia@gmail.com</a><br/>
+              <a href="mailto:m.usman.workspace@gmail.com">m.usman.workspace@gmail.com</a>
+            </p>
+          </div>
+          
+          <div class="contact-card animate-on-scroll">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3 class="contact-title">Phone</h3>
+            <p class="contact-value">
+              <a href="tel:+923167717702">+92 316 7717702</a>
+            </p>
+          </div>
+          
+          <div class="contact-card animate-on-scroll">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3 class="contact-title">Location</h3>
+            <p class="contact-value">
+              Islamabad, Pakistan<br/>
+              Open to Remote & Relocation
+            </p>
+          </div>
+        </div>
+        
+        <div class="text-center" style="margin-top: 3rem;">
+          <h3 style="margin-bottom: 1rem; font-weight: 600;">Connect With Me</h3>
+          <div class="hero-social" style="justify-content: center;">
+            <a href="https://scholar.google.com" target="_blank" class="social-btn" aria-label="Google Scholar">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="https://github.com/usman-academia" target="_blank" class="social-btn" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/usman-academia" target="_blank" class="social-btn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:m.usman.academia@gmail.com" class="social-btn" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <!-- ===== FOOTER ===== -->
+  <footer>
     <div class="container">
-      <h3 class="sitename">Muhammad Usman Khan</h3>
-      <p>Crafting solutions, shaping the future.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.facebook.com/share/UMZ4uKwMR8cWZYW5/?mibextid=qi2Omg"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/namsukhan47/"><i class="bi bi-linkedin"></i></a>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="downloadCV">Download CV</a>
       </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span>
-        </div>
-      </div>
+      <p>
+        &copy; <span id="year"></span> Muhammad Usman Khan. All rights reserved.<br/>
+        <small>Built with ❤️ using HTML, CSS & vanilla JS • Deployed on GitHub Pages</small>
+      </p>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/events.js"></script>
-
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ===== THEME TOGGLE =====
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or respect OS preference
+    const savedTheme = localStorage.getItem('theme');
+    const osPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'light' || (!savedTheme && !osPrefersDark)) {
+      html.setAttribute('data-theme', 'light');
+      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+    
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      
+      themeToggle.innerHTML = newTheme === 'dark' 
+        ? '<i class="fas fa-moon"></i>' 
+        : '<i class="fas fa-sun"></i>';
+    });
+    
+    // ===== MOBILE NAVIGATION =====
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileToggle.innerHTML = navLinks.classList.contains('active')
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+    });
+    
+    // Close mobile nav when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+    
+    // ===== ACTIVE NAV LINK ON SCROLL =====
+    const sections = document.querySelectorAll('section[id]');
+    const navAnchors = document.querySelectorAll('.nav-links a');
+    
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navAnchors.forEach(anchor => {
+        anchor.classList.remove('active');
+        if (anchor.getAttribute('href') === `#${current}`) {
+          anchor.classList.add('active');
+        }
+      });
+    });
+    
+    // ===== ANIMATE ON SCROLL =====
+    const animateElements = document.querySelectorAll('.animate-on-scroll');
+    
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    animateElements.forEach(el => observer.observe(el));
+    
+    // ===== DYNAMIC YEAR =====
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    
+    // ===== DOWNLOAD CV (Placeholder - Replace with actual PDF path) =====
+    document.getElementById('downloadCV')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Replace 'FinalCV_Design.pdf' with your actual PDF path in repo
+      const link = document.createElement('a');
+      link.href = 'FinalCV_Design.pdf';
+      link.download = 'Muhammad_Usman_Khan_CV.pdf';
+      link.click();
+      
+      // Fallback alert if file not found
+      setTimeout(() => {
+        alert('📄 CV download started! (Ensure FinalCV_Design.pdf is in your repo root)');
+      }, 500);
+    });
+    
+    // ===== CONSOLE WELCOME =====
+    console.log(`
+    ╔════════════════════════════════════════╗
+    ║  👋 Hello Developer!                   ║
+    ║                                        ║
+    ║  Muhammad Usman Khan's Portfolio       ║
+    ║  Computer Vision • AI • Deep Learning  ║
+    ║                                        ║
+    ║  💼 m.usman.academia@gmail.com        ║
+    ║  🔗 github.com/usman-academia         ║
+    ║                                        ║
+    ║  P.S. Check out the source code! 🚀   ║
+    ╚════════════════════════════════════════╝
+    `);
+  </script>
 </body>
-
 </html>
